@@ -144,6 +144,7 @@ class Clock(tk.Tk):
             mixer.music.play()
         except:
             messagebox.showinfo("Alarma", "¡Hora de la alarma!")
+            self.alarm_active = False #Esta es la línea que te faltaba para poder desactivar automáticamente la alarma.
             
     def play_hourly_sound(self):
         try:
